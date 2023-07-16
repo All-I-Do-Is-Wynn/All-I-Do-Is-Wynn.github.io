@@ -1,0 +1,121 @@
+html{
+    display: block;
+    margin: 0 0;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: rgb(60,180,120);
+    font-size: 30px;
+ }
+.nav {
+    grid-area: nav;
+    height:42px;
+    background: #333;
+    border-top: solid 2px #008080;
+  	border-bottom: solid 2px #008080;
+}
+
+.nav a {
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    background: #333;
+    color: rgb(60,180,120);
+    border-bottom: solid 2px #008080;
+}
+
+.nav a:hover {
+    background: #008080;
+    color: #ddd;
+}
+
+.nav a.active {
+    padding-bottom: 12px;
+    background-color: #008080;
+    color: white;
+}
+
+.para {grid-area: para;}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
+	width: auto;
+	background: #333;
+	padding-top:15px;
+    padding-left: 35%;}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+	background-color: #008080;
+}
+
+.footer a.active {
+    background-color: #008080;
+    color: white;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'header header header header header'
+                         'nav nav nav nav nav'
+                         '. para para para .'
+                         '. footer footer footer .';
+    background-color:  darkblue;
+}
+
+.grid-container > div {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+img{
+	max-height: 100%;
+	max-width: 100%;
+	float:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
